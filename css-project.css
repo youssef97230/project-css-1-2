@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(20, 20, 20)
+}
+
+/* Navbar */
+nav {
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(40, 40, 40);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  color: orangered;
+  padding: 5px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-nav li {
+  margin-left: 1rem;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.navbar-nav a:hover {
+  color: orangered;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: orangered;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: rgb(255, 96, 39);
+}
+
+/* Menu Section */
+#menu {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#menu h2 {
+  font-size: 2rem;
+  color: orangered;
+  margin-bottom: 1.5rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-item {
+  background-color: rgb(42, 42, 42);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.menu-item h5 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.menu-item p.price {
+  font-weight: bold;
+  color: white;
+}
+
+/* About Us Section */
+#about {
+  padding: 2rem 1rem;
+}
+
+.about-content {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: orangered;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(255, 96, 39);
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+}
+
+footer a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: orangered;
+}
+
+footer a:hover {
+  color: rgb(255, 96, 39);
+}
+
+footer p {
+  color: white;
+}
